@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "alex";
+  src: url("FunSized.ttf");
+}
+
+#teste{
+border: 5px outset black;
+width: 600px;
+height: 800px;
+margin: auto;
+text-align: center;
+font-size: 2.5em;
+background-color: rgba(127, 145, 145, 0.72);
+font-family: alex;
+text-shadow: 2px 12px 12px;
+}
+body{
+  background-image: url(voyelles.jpg);
+}
+#gras:hover{
+  color: green!important;
+}
+#minuscule:hover{
+  transform: scale(1:0);
+  -moz-transform: scale(30.5);
+  -webkit-transform: scale(30.5);
+  -o-transform: scale(30.5);
+  -ms-transform: scale(30.5);
+  animation:gros 15s infinite linear;
+}
+#inverser{
+animation:rota 15s infinite linear;
+}
+
+@keyframes rota{
+0%{
+transform: rotate(0deg);
+transform-origin left;
+}
+100%{
+  transform: rotate(360deg);
+  transform-origin left;
+}
